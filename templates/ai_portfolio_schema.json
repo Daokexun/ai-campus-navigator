@@ -1,0 +1,84 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "AICampusPortfolio",
+  "type": "object",
+  "properties": {
+    "candidate_summary": {
+      "type": "object",
+      "properties": {
+        "recommended_track": {
+          "type": "string",
+          "enum": [
+            "Research_Qingyun",
+            "Engineering_Acceleration",
+            "AI_Product_Manager",
+            "Domain_AI_Hybrid"
+          ]
+        },
+        "readiness_score": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 100
+        },
+        "core_defensible_moat": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "recommended_track",
+        "readiness_score",
+        "core_defensible_moat"
+      ]
+    },
+    "highlight_projects": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "project_name": {
+            "type": "string"
+          },
+          "why_ai_justification": {
+            "type": "string"
+          },
+          "badcase_solution": {
+            "type": "string"
+          },
+          "metrics": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "project_name",
+          "why_ai_justification",
+          "badcase_solution",
+          "metrics"
+        ]
+      }
+    },
+    "adversarial_audit": {
+      "type": "object",
+      "properties": {
+        "biggest_red_flag": {
+          "type": "string"
+        },
+        "interviewer_killer_question": {
+          "type": "string"
+        },
+        "recommended_fix": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "biggest_red_flag",
+        "interviewer_killer_question",
+        "recommended_fix"
+      ]
+    }
+  },
+  "required": [
+    "candidate_summary",
+    "highlight_projects",
+    "adversarial_audit"
+  ]
+}

@@ -1,0 +1,110 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 480" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0f1d"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+    <linearGradient id="glowLine" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="50%" stop-color="#818cf8"/>
+      <stop offset="100%" stop-color="#34d399"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#000000" flood-opacity="0.45"/>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="480" rx="16" fill="url(#bgGrad)"/>
+  <rect x="1" y="1" width="1198" height="478" rx="15" fill="none" stroke="#334155" stroke-width="1"/>
+
+  <text x="600" y="45" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,sans-serif" font-size="20" font-weight="700" fill="#f8fafc" text-anchor="middle">鹅厂校招 AI 人才突围四步法架构 (AI-Native Career Architecture)</text>
+  <text x="600" y="70" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,sans-serif" font-size="13" fill="#94a3b8" text-anchor="middle">基于腾讯校园招聘团队一手实战洞察 · 岗位四维雷达 · Prompt 品味评估 · 真实 Demo 闭环 · 青云对抗审查</text>
+
+  <!-- Step 1 -->
+  <g transform="translate(40, 100)" filter="url(#shadow)">
+    <rect width="250" height="320" rx="12" fill="url(#cardGrad)" stroke="#38bdf8" stroke-width="1.5"/>
+    <rect x="0" y="0" width="250" height="6" rx="3" fill="#38bdf8"/>
+    <circle cx="36" cy="36" r="16" fill="#0284c7"/>
+    <text x="36" y="42" font-family="sans-serif" font-size="14" font-weight="bold" fill="#ffffff" text-anchor="middle">01</text>
+    <text x="64" y="34" font-family="sans-serif" font-size="16" font-weight="bold" fill="#ffffff">定位四维象限</text>
+    <text x="64" y="52" font-family="sans-serif" font-size="11" fill="#38bdf8">AI ROLE TAXONOMY</text>
+    <line x1="20" y1="70" x2="230" y2="70" stroke="#334155" stroke-width="1"/>
+    
+    <text x="20" y="95" font-family="sans-serif" font-size="13" font-weight="bold" fill="#e2e8f0">🎯 拒绝盲目跟风，对齐真业务</text>
+    <text x="20" y="125" font-family="sans-serif" font-size="12" fill="#94a3b8">• 算法研究：底层大模型与青云专项</text>
+    <text x="20" y="150" font-family="sans-serif" font-size="12" fill="#94a3b8">• 工程加速：推理优化/vLLM/算力压榨</text>
+    <text x="20" y="175" font-family="sans-serif" font-size="12" fill="#94a3b8">• AI 产品经理：场景挖掘与工作流编排</text>
+    <text x="20" y="200" font-family="sans-serif" font-size="12" fill="#94a3b8">• 业务+AI复合：传统业务AI原生重构</text>
+    
+    <rect x="20" y="235" width="210" height="65" rx="6" fill="#0f172a" stroke="#334155" stroke-width="1"/>
+    <text x="30" y="258" font-family="sans-serif" font-size="11" fill="#38bdf8">💡 面试官核心关注</text>
+    <text x="30" y="280" font-family="sans-serif" font-size="11" fill="#cbd5e1">“你对自己投递方向的边界与业务痛点是否有真正通透的认知？”</text>
+  </g>
+
+  <!-- Step 2 -->
+  <g transform="translate(330, 100)" filter="url(#shadow)">
+    <rect width="250" height="320" rx="12" fill="url(#cardGrad)" stroke="#818cf8" stroke-width="1.5"/>
+    <rect x="0" y="0" width="250" height="6" rx="3" fill="#818cf8"/>
+    <circle cx="36" cy="36" r="16" fill="#4f46e5"/>
+    <text x="36" y="42" font-family="sans-serif" font-size="14" font-weight="bold" fill="#ffffff" text-anchor="middle">02</text>
+    <text x="64" y="34" font-family="sans-serif" font-size="16" font-weight="bold" fill="#ffffff">淬炼品味与语感</text>
+    <text x="64" y="52" font-family="sans-serif" font-size="11" fill="#818cf8">PROMPT & TASTE</text>
+    <line x1="20" y1="70" x2="230" y2="70" stroke="#334155" stroke-width="1"/>
+    
+    <text x="20" y="95" font-family="sans-serif" font-size="13" font-weight="bold" fill="#e2e8f0">🎨 自然语言的极致结构化</text>
+    <text x="20" y="125" font-family="sans-serif" font-size="12" fill="#94a3b8">• 场景还原：把抽象需求变成精准约束</text>
+    <text x="20" y="150" font-family="sans-serif" font-size="12" fill="#94a3b8">• Badcase 敏感度：对幻觉与漂移的嗅觉</text>
+    <text x="20" y="175" font-family="sans-serif" font-size="12" fill="#94a3b8">• 评测基准建设：自建高难度 Golden Set</text>
+    <text x="20" y="200" font-family="sans-serif" font-size="12" fill="#94a3b8">• 审美与语感：山水画比喻之自然语言力</text>
+    
+    <rect x="20" y="235" width="210" height="65" rx="6" fill="#0f172a" stroke="#334155" stroke-width="1"/>
+    <text x="30" y="258" font-family="sans-serif" font-size="11" fill="#818cf8">💡 面试官核心关注</text>
+    <text x="30" y="280" font-family="sans-serif" font-size="11" fill="#cbd5e1">“能否用严谨自然语言调教出确定性输出？有无自建测试集？”</text>
+  </g>
+
+  <!-- Step 3 -->
+  <g transform="translate(620, 100)" filter="url(#shadow)">
+    <rect width="250" height="320" rx="12" fill="url(#cardGrad)" stroke="#34d399" stroke-width="1.5"/>
+    <rect x="0" y="0" width="250" height="6" rx="3" fill="#34d399"/>
+    <circle cx="36" cy="36" r="16" fill="#059669"/>
+    <text x="36" y="42" font-family="sans-serif" font-size="14" font-weight="bold" fill="#ffffff" text-anchor="middle">03</text>
+    <text x="64" y="34" font-family="sans-serif" font-size="16" font-weight="bold" fill="#ffffff">打造落地真实闭环</text>
+    <text x="64" y="52" font-family="sans-serif" font-size="11" fill="#34d399">END-TO-END DEMO</text>
+    <line x1="20" y1="70" x2="230" y2="70" stroke="#334155" stroke-width="1"/>
+    
+    <text x="20" y="95" font-family="sans-serif" font-size="13" font-weight="bold" fill="#e2e8f0">🚀 拒绝纸上谈兵，上手出 Demo</text>
+    <text x="20" y="125" font-family="sans-serif" font-size="12" fill="#94a3b8">• 为什么用 AI：讲清非传统规则解的必要</text>
+    <text x="20" y="150" font-family="sans-serif" font-size="12" fill="#94a3b8">• 真实应用闭环：从原型到真实用户验证</text>
+    <text x="20" y="175" font-family="sans-serif" font-size="12" fill="#94a3b8">• 成本/延迟权衡：Token 预算与响应取舍</text>
+    <text x="20" y="200" font-family="sans-serif" font-size="12" fill="#94a3b8">• 迭代复盘：从 V1 到 V3 解决了哪些卡点</text>
+    
+    <rect x="20" y="235" width="210" height="65" rx="6" fill="#0f172a" stroke="#334155" stroke-width="1"/>
+    <text x="30" y="258" font-family="sans-serif" font-size="11" fill="#34d399">💡 面试官核心关注</text>
+    <text x="30" y="280" font-family="sans-serif" font-size="11" fill="#cbd5e1">“哪怕用 API 搭过小工具并解决过真实痛点，也远胜过简历吹大词。”</text>
+  </g>
+
+  <!-- Step 4 -->
+  <g transform="translate(910, 100)" filter="url(#shadow)">
+    <rect width="250" height="320" rx="12" fill="url(#cardGrad)" stroke="#f59e0b" stroke-width="1.5"/>
+    <rect x="0" y="0" width="250" height="6" rx="3" fill="#f59e0b"/>
+    <circle cx="36" cy="36" r="16" fill="#d97706"/>
+    <text x="36" y="42" font-family="sans-serif" font-size="14" font-weight="bold" fill="#ffffff" text-anchor="middle">04</text>
+    <text x="64" y="34" font-family="sans-serif" font-size="16" font-weight="bold" fill="#ffffff">红蓝对抗与青云答辩</text>
+    <text x="64" y="52" font-family="sans-serif" font-size="11" fill="#f59e0b">ADVERSARIAL DEFENSE</text>
+    <line x1="20" y1="70" x2="230" y2="70" stroke="#334155" stroke-width="1"/>
+    
+    <text x="20" y="95" font-family="sans-serif" font-size="13" font-weight="bold" fill="#e2e8f0">🛡️ 极限施压与真实性审查</text>
+    <text x="20" y="125" font-family="sans-serif" font-size="12" fill="#94a3b8">• 模拟鹅厂资深面试官连环深挖追问</text>
+    <text x="20" y="150" font-family="sans-serif" font-size="12" fill="#94a3b8">• 剔除装懂硬背：还原真实技术贡献度</text>
+    <text x="20" y="175" font-family="sans-serif" font-size="12" fill="#94a3b8">• 青云计划通道：顶尖青年人才评定标准</text>
+    <text x="20" y="200" font-family="sans-serif" font-size="12" fill="#94a3b8">• 100 分制校招竞争力实测达标通过</text>
+    
+    <rect x="20" y="235" width="210" height="65" rx="6" fill="#0f172a" stroke="#334155" stroke-width="1"/>
+    <text x="30" y="258" font-family="sans-serif" font-size="11" fill="#f59e0b">💡 面试官核心关注</text>
+    <text x="30" y="280" font-family="sans-serif" font-size="11" fill="#cbd5e1">“对自己的每一个决策知其所以然，绝无学术造假与代码套壳。”</text>
+  </g>
+</svg>

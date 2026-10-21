@@ -1,0 +1,27 @@
+{
+  "title": "Tencent AI Campus Recruiting 100-Point Evaluation Rubric",
+  "total_points": 100,
+  "passing_grade": 85,
+  "dimensions": [
+    {
+      "dimension": "Role Fit & Taxonomy Precision",
+      "weight": 25,
+      "criteria": "Clear alignment with Algorithm Research, Inference Engineering, AI PM, or Domain+AI. Zero generic 'I love AI' fluff."
+    },
+    {
+      "dimension": "Prompt Engineering & Taste Fidelity",
+      "weight": 25,
+      "criteria": "Demonstrated natural language scene deconstruction, badcase sensitivity, and Golden Set evaluation benchmark awareness."
+    },
+    {
+      "dimension": "End-to-End Demo Closure & Impact",
+      "weight": 25,
+      "criteria": "Working prototype/demo with clear justification of why AI is necessary, token/latency economics, and user feedback."
+    },
+    {
+      "dimension": "Adversarial Defense & Authenticity",
+      "weight": 25,
+      "criteria": "Withstands multi-turn grilling without reciting pre-canned answers. Demonstrates genuine curiosity, self-driven growth, and resilience."
+    }
+  ]
+}
