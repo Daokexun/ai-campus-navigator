@@ -1,0 +1,15 @@
+# AI-Era Campus Recruitment Navigator & Engineering Engine (llms.txt)
+> A production playbook distilled from Tencent technical mentors to transcend API-wrapper commoditization, establish 4-quadrant role clarity, master prompt taste, and ship live 48h interactive prototypes.
+
+## Core Rules & Taxonomy
+- [01 Role Taxonomy](prompts/01_ai_role_radar.md): Infrastructure (Compute/VRAM), Fine-Tuning (LoRA/SFT), Agentic Orchestration (ReAct/State), Application Enablement.
+- [02 Prompt Taste Evaluator](prompts/02_prompt_taste_evaluator.md): Strict contract boundaries, negative constraints, and JSON schema determinism.
+- [03 48h Demo Showcase Loop](prompts/03_demo_showcase_loop.md): Streamlit/Gradio live cloud deployment testable on mobile.
+- [04 Qingyun Talent Matrix](prompts/04_qingyun_talent_matrix.md): BigTech elite campus talent rubrics and leveling rubrics.
+- [05 Adversarial Defense Probes](prompts/05_adversarial_interviewer_audit.md): Causal reasoning, throughput/latency trade-offs, and anti-hallucination guardrails.
+
+## CLI Evaluation
+- `python cli/taste_evaluator.py --taste-test`
+
+## Key Causal Heuristic
+Never mistake running open-source code for engineering capability. BigTech interviewers stress-test edge conditions, cost trade-offs, and tangible live proof.

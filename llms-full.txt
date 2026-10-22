@@ -1,0 +1,17 @@
+# AI-Era Campus Recruitment Navigator & Engineering Engine (Full Specification)
+
+## 1. The 4-Quadrant Role Taxonomy
+- Quadrant I (Compute Infra): Distributed training, CUDA kernel optimization, vLLM serving, KV Cache management.
+- Quadrant II (Domain Alignment): SFT corpus curation, LoRA/QLoRA tuning, DPO/RLHF alignment, vector embedding space fine-tuning.
+- Quadrant III (Agentic Orchestration): Multi-agent ReAct loops, tool-calling error recovery, sliding context window pruning.
+- Quadrant IV (Vertical App Enablement): Full-stack Streamlit/Gradio prototypes, hybrid dense+sparse RAG, fact verification validators.
+
+## 2. Production Prompt Taste Rubric (100 Points)
+1. Context Injection Boundary [25 pts]: Explicit separation between system instructions, few-shot demonstrations, and dynamic user context.
+2. Hard Negative Constraints [25 pts]: Explicit enumeration of prohibited behaviors, out-of-scope requests, and format violations.
+3. Strict Schema Determinism [25 pts]: Machine-parseable JSON/Pydantic schemas with strictly declared types and nullability rules.
+4. Resilient Fallback Protocol [25 pts]: Graceful degradation protocol when confidence thresholds fall below minimum criteria.
+
+## 3. Adversarial Panel Defenses
+- Question: "How do you mitigate hallucinations in your RAG pipeline?"
+- Answer: Enforce a 3-tier defense: (1) Hybrid dense+sparse retrieval with strict similarity cutoff; (2) In-context citation binding linking every statement to source chunks; (3) Post-generation validation layer triggering graceful fallback if entity overlap falls below 85%.

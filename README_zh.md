@@ -9,7 +9,16 @@
 # AI 时代校招生求职与实战能力重构指南
 ### AI-Era Campus Recruitment Navigator & Engineering Engine
 
-**沉淀自腾讯技术与业务导师团队实战洞察 · 击破盲目调包内卷、重塑岗位认知与 48h Demo 闭环**
+**沉淀自腾讯技术与业务导师团队实战洞察 · 击破盲目调包内卷、重塑四象限岗位认知与 48h Demo 闭环**
+
+<p align="center">
+  <a href="https://github.com/Daokexun/ai-campus-navigator/stargazers"><img src="https://img.shields.io/github/stars/Daokexun/ai-campus-navigator?style=flat-square&logo=github&color=black" alt="GitHub Stars"></a>
+  <a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-blue.svg?style=flat-square" alt="License"></a>
+  <a href="llms.txt"><img src="https://img.shields.io/badge/Claude%20Code-Skill%20Ready-6B46C1?style=flat-square&logo=anthropic" alt="Claude Code Ready"></a>
+  <a href="cli/taste_evaluator.py"><img src="https://img.shields.io/badge/CLI-Taste%20Evaluator-10B981?style=flat-square&logo=python" alt="CLI Evaluator"></a>
+  <a href="cheatsheets/ai_campus_decision_tree.svg"><img src="https://img.shields.io/badge/Decision%20Tree-Printable%20SVG-orange?style=flat-square" alt="Decision Tree"></a>
+  <a href="CONTRIBUTING.md"><img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square" alt="PRs Welcome"></a>
+</p>
 
 </div>
 
@@ -17,7 +26,7 @@
 
 ### 📖 导读与实战背景
 
-> **“在 AI 人人可用的时代，校招生最大的壁垒绝不是‘跑通了开源开源代码’，而是能否理解代码背后的商业因果律、具备工程化落地能力与高质量的 Prompt 审美。”**  
+> **“在 AI 人人可用的时代，校招生最大的壁垒绝不是‘跑通了开源代码’，而是能否理解代码背后的商业因果律、具备工程化落地能力与高质量的 Prompt 审美。”**  
 > —— 腾讯技术与业务导师团队（鹅厂卧谈会）
 
 当前 AI 浪潮下，技术校招与产品校招面临前所未有的同质化困境：
@@ -30,16 +39,32 @@
 
 ---
 
-### 🏛️ 四大核心支柱 (Core Capabilities)
+### ⚡ 15 秒开箱实测 CLI
 
-参考 Dropbox 资源中心与顶级科技公司工程实践，本系统构建了 4 大标准化工作模块：
+本地无需繁琐配置，终端直接体验工业级 Prompt 契约与能力打分：
+
+```bash
+# 1. 克隆代码仓库
+git clone https://github.com/Daokexun/ai-campus-navigator.git
+cd ai-campus-navigator
+
+# 2. 运行对比评测：学生调包提示词 vs 工业级生产契约
+python cli/taste_evaluator.py --taste-test
+
+# 3. 评估自己的提示词
+python cli/taste_evaluator.py --eval "你编写的提示词内容"
+```
+
+---
+
+### 🏛️ 四大核心支柱 (Core Capabilities)
 
 | 模块 | 核心解决问题 | 一线实战落地打法 |
 | :--- | :--- | :--- |
-| **01 岗位四象限定位**<br>`prompts/01_ai_career_compass.md` | 跳出盲目调包陷阱，明确个人技术栈生态位 | 划分底层算力与分布式训练、垂直领域模型微调、业务级 Agent 编排、现有业务+AI 赋能 4 类生态位，精准对齐求职诉求。 |
-| **02 Prompt 审美跃迁引擎**<br>`prompts/02_prompt_taste_builder.md` | 摆脱学生式模糊提问，撰写生产级指令 | 从“生成一段文案”跃迁至包含“结构化角色定义 + 上下文注入 + 负向硬性约束 + 容错防御 + JSON Schema 严格校验”。 |
-| **03 48h 极速 Demo 交付闭环**<br>`prompts/03_interactive_demo_loop.md` | 告别纸上谈兵，现场提供手机可测原型 | 使用 Streamlit / Gradio 配合轻量云托管，48 小时内落地具备可测试性、异常处理与数据持久化的端到端应用。 |
-| **04 架构深度探针与抗穿防守**<br>`prompts/04_technical_depth_probe.md` | 应对技术大牛 10 轮因果逻辑压力测试 | 针对显存开销换算、推理吞吐与延迟平衡、幻觉抑制、降级容灾方案提供严密推演逻辑。 |
+| **01 岗位四象限定位**<br>`prompts/01_ai_role_radar.md` | 跳出盲目调包陷阱，明确个人技术栈生态位 | 划分底层算力与分布式训练、垂直领域模型微调、业务级 Agent 编排、现有业务+AI 赋能 4 类生态位，精准对齐求职诉求。 |
+| **02 Prompt 审美跃迁引擎**<br>`prompts/02_prompt_taste_evaluator.md` | 摆脱学生式模糊提问，撰写生产级指令 | 从“生成一段文案”跃迁至包含“结构化角色定义 + 上下文注入 + 负向硬性约束 + 容错防御 + JSON Schema 严格校验”。 |
+| **03 48h 极速 Demo 交付闭环**<br>`prompts/03_demo_showcase_loop.md` | 告别纸上谈兵，现场提供手机可测原型 | 使用 Streamlit / Gradio 配合轻量云托管，48 小时内落地具备可测试性、异常处理与数据持久化的端到端应用。 |
+| **04 架构深度探针与抗穿防守**<br>`prompts/05_adversarial_interviewer_audit.md` | 应对技术大牛 10 轮因果逻辑压力测试 | 针对显存开销换算、推理吞吐与延迟平衡、幻觉抑制、降级容灾方案提供严密推演逻辑。 |
 
 ---
 
@@ -53,58 +78,75 @@
 
 ---
 
+### 🌲 生态位决策树与一页纸速查卡
+
+配备高清可打印矢量图与速查清单：
+- 📄 **一页纸核心速查卡**：[`cheatsheets/ai_campus_cheatsheet.md`](cheatsheets/ai_campus_cheatsheet.md)（显存吞吐公式、10条硬负向规则）
+- 📊 **矢量生态决策树**：[`cheatsheets/ai_campus_decision_tree.svg`](cheatsheets/ai_campus_decision_tree.svg)
+
+<div align="center">
+  <img src="cheatsheets/ai_campus_decision_tree.svg" alt="生态决策树" width="100%" style="border-radius: 8px; border: 1px solid rgba(255,255,255,0.1);" />
+</div>
+
+---
+
 ### 🥊 实战攻防对比：学生调包侠 vs 业务工程型候选人
 
 | 面试考察点 | 普通调包应届生的表现 | 业务工程型候选人的高分答卷 |
 | :--- | :--- | :--- |
 | **面试官问：“你的大模型问答系统如何处理幻觉？”** | 泛泛而谈：“我们在 Prompt 里写了‘请根据事实回答，不要编造’，然后调了 LangChain 的默认 RAG 检索。” | **严密防御与兜底协议**：“单一 Prompt 约束无法彻底根除幻觉。我们在工程上采取三层防御：1. **召回阶段**采用语义检索+关键词倒排混合检索，设定相似度置信阈值；2. **推理阶段**强制要求模型输出引用的段落 ID，未引用的内容直接过滤；3. **兜底阶段**配置后验规则校验器，若关键实体不匹配则触发优雅降级，转人工兜底。” |
-| **现场展示项目 Demo** | 打开 GitHub 仓库展示几百行代码，或者展示几张截好的运行截图。 | **即开即测的交互闭环**：“张老师，项目已经部署在云端轻量容器中，这是在线可交互 Demo 的二维码。您可以直接在手机浏览器输入一段真实的客服咨询，测试并发延迟与结构化 JSON 输出的校验稳定性。” |
-| **面试官追问：“如果业务并发量翻 10 倍，你的系统瓶颈在哪里？”** | 茫然猜测：“可能是服务器 CPU 不够，加配置或者多开几台机器吧。” | **瓶颈量化与架构取舍**：“瓶颈不在前端服务，而在下游 LLM 推理吞吐与上游向量数据库的 QPS 限制。若流量激增 10 倍，首先打满的是每分钟 Token 速率配额（TPM）。我们设计了两级应对：针对高频重复问答引入 Redis 语义向量缓存（命中率达 42%），同时针对耗时长的复杂任务采用 Celery 异步队列解耦，保障核心链路不被雪崩拖垮。” |
+| **面试官问：“多卡推理时 KV Cache 如何估算？”** | 支支吾吾：“显存挺大的，跑 vLLM 默认参数就行。” | **精确实时显存换算**：“每个 Token 的 KV Cache 显存消耗公式为 $2 \times 2 \times n_{layers} \times n_{heads} \times d_{head} \times \text{精度字节}$。在 fp16 下，以 32 层 70B 模型为例，单 Token 跨层消耗约 1.3MB。当 Batch Size 为 64、上下文达到 4096 时，仅 KV Cache 就消耗 341GB 显存，必须借助 PagedAttention 和至少 8 卡张量并行分摊。” |
 
 ---
 
-### 📂 仓库核心资产目录
+### 🤖 AI Coding Agent 原生就绪 (`llms.txt`)
+
+本项目全面适配 Claude Code、Cursor、GitHub Copilot 等 AI 编程助手：
+- **精选上下文规则**：将 [`llms.txt`](llms.txt) 引入 Cursor 规则库，快速模拟大厂评委对你的项目进行因果探针审核。
+- **全量提示词规格**：参考 [`llms-full.txt`](llms-full.txt) 快速搭建工业级生产提示词契约。
+
+---
+
+### 📂 目录结构全览
 
 ```text
 ai-campus-navigator/
 ├── assets/
-│   ├── hero_poster_zh.jpg           # Dropbox 风格中文商业封面
-│   ├── hero_poster_en.jpg           # 英文版商业封面
-│   ├── architecture_zh.svg          # 中文矢量系统架构图
-│   └── architecture.svg             # 英文矢量系统架构图
+│   ├── hero_poster_en.jpg           # 英文技术社论封面海报 (1280x720)
+│   ├── hero_poster_zh.jpg           # 中文技术社论封面海报 (1280x720)
+│   ├── architecture.png             # 1280x640 全景系统架构蓝图
+│   └── architecture_zh.png          # 1280x640 中文系统架构蓝图
+├── cheatsheets/
+│   ├── ai_campus_cheatsheet.md      # 一页纸速查卡与硬负向规则清单
+│   └── ai_campus_decision_tree.svg  # 可打印矢量求职生态位决策树
+├── cli/
+│   └── taste_evaluator.py           # 交互式 Prompt 审美与工程契约评测命令行工具
 ├── prompts/
-│   ├── 01_ai_career_compass.md          # 岗位四象限矩阵定位与技能树诊断
-│   ├── 02_prompt_taste_builder.md       # 工业级 Prompt 审美跃迁工作台
-│   ├── 03_interactive_demo_loop.md      # 48 小时端到端 Demo 极速交付指南
-│   ├── 04_technical_depth_probe.md      # 10 道底层架构与因果逻辑高压探针
-│   └── 05_github_showcase_architect.md  # 顶级开源代码库 README 视觉工程指南
+│   ├── 01_ai_role_radar.md          # 岗位四象限定位工作台
+│   ├── 02_prompt_taste_evaluator.md # 工业级 Prompt 审美跃迁引擎
+│   ├── 03_demo_showcase_loop.md     # 48小时可交互 Demo 极速交付闭环
+│   ├── 04_qingyun_talent_matrix.md  # 青云计划顶尖校招生画像与评鉴矩阵
+│   └── 05_adversarial_interviewer_audit.md # 面试官视角对抗性深度审计探针
 ├── templates/
-│   └── candidate_profile_schema.json    # 候选人技能与项目评估结构化 Schema
+│   └── ai_portfolio_schema.json     # 候选人实战能力评估 Schema
 ├── evals/
-│   └── rubric_100_ai_campus.json        # AI 时代校招实战竞争力 100 分量化评分标准
-├── docs/
-│   └── ARCHITECTURE.md                  # 校招生求职与实战能力重构完整白皮书
-├── examples/
-│   └── SHOWCASE_COMPARISON.md           # 真实调包简历 vs 工程化实战案例拆解
-├── SKILL.md                             # Antigravity / Claude 智能体技能定义
-├── README_zh.md                         # 中文实战文档（当前文件）
-└── README.md                            # 英文版发布文档
+│   └── rubric_100_ai_campus.json    # 100 分制 AI 校招评测基准
+├── llms.txt                         # AI Agent 规范
+├── llms-full.txt                    # 完整规范
+├── README.md                        # 英文说明文档
+└── README_zh.md                     # 中文说明文档 (当前文件)
 ```
 
 ---
 
-### 🚀 快速上手 (Quickstart)
+### 🌟 Star History & 社区
 
-```bash
-# 1. 克隆本仓库
-git clone https://github.com/Daokexun/ai-campus-navigator.git
+<p align="center">
+  <a href="https://star-history.com/#Daokexun/ai-campus-navigator&Date">
+    <img src="https://api.star-history.com/svg?repos=Daokexun/ai-campus-navigator&type=Date" alt="Star History Chart" width="100%">
+  </a>
+</p>
 
-# 2. 查阅工业级 Prompt 审美构建指南
-cat prompts/02_prompt_taste_builder.md
-```
+### 📄 开源许可证与贡献
 
----
-
-### 📄 开源许可与贡献
-
-本项目基于 [MIT License](LICENSE) 开源。欢迎一线大模型工程师、业务架构师与技术导师贡献真实评测题目与实战项目范例。贡献规则详见 [CONTRIBUTING.md](CONTRIBUTING.md)。
+本项目采用 [MIT License](LICENSE) 开源。欢迎各大厂技术面试官、高校导师及求职同学共同参与共建，详见 [CONTRIBUTING.md](CONTRIBUTING.md)。
