@@ -1,110 +1,154 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 480" width="100%" height="100%">
-  <defs>
-    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#0a0f1d"/>
-      <stop offset="100%" stop-color="#0f172a"/>
-    </linearGradient>
-    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#1e293b"/>
-      <stop offset="100%" stop-color="#0f172a"/>
-    </linearGradient>
-    <linearGradient id="glowLine" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#38bdf8"/>
-      <stop offset="50%" stop-color="#818cf8"/>
-      <stop offset="100%" stop-color="#34d399"/>
-    </linearGradient>
-    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
-      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#000000" flood-opacity="0.45"/>
-    </filter>
-  </defs>
-
-  <rect width="1200" height="480" rx="16" fill="url(#bgGrad)"/>
-  <rect x="1" y="1" width="1198" height="478" rx="15" fill="none" stroke="#334155" stroke-width="1"/>
-
-  <text x="600" y="45" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,sans-serif" font-size="20" font-weight="700" fill="#f8fafc" text-anchor="middle">AI-Native BigTech Career Architecture (4-Stage Pipeline)</text>
-  <text x="600" y="70" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,sans-serif" font-size="13" fill="#94a3b8" text-anchor="middle">Grounded in Tencent Campus Recruiting Insights · Role Taxonomy · Prompt Taste · Demo Closure · Adversarial Defense</text>
-
-  <!-- Step 1 -->
-  <g transform="translate(40, 100)" filter="url(#shadow)">
-    <rect width="250" height="320" rx="12" fill="url(#cardGrad)" stroke="#38bdf8" stroke-width="1.5"/>
-    <rect x="0" y="0" width="250" height="6" rx="3" fill="#38bdf8"/>
-    <circle cx="36" cy="36" r="16" fill="#0284c7"/>
-    <text x="36" y="42" font-family="sans-serif" font-size="14" font-weight="bold" fill="#ffffff" text-anchor="middle">01</text>
-    <text x="64" y="34" font-family="sans-serif" font-size="16" font-weight="bold" fill="#ffffff">Role Taxonomy</text>
-    <text x="64" y="52" font-family="sans-serif" font-size="11" fill="#38bdf8">AI ROLE TAXONOMY</text>
-    <line x1="20" y1="70" x2="230" y2="70" stroke="#334155" stroke-width="1"/>
+    <defs>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&amp;display=swap');
+        </style>
+        <filter id="card-shadow" x="-5%" y="-5%" width="110%" height="110%">
+            <feDropShadow dx="0" dy="4" stdDeviation="8" flood-opacity="0.04" />
+        </filter>
+    </defs>
     
-    <text x="20" y="95" font-family="sans-serif" font-size="13" font-weight="bold" fill="#e2e8f0">🎯 拒绝盲目跟风，对齐真业务</text>
-    <text x="20" y="125" font-family="sans-serif" font-size="12" fill="#94a3b8">• 算法研究：底层大模型与青云专项</text>
-    <text x="20" y="150" font-family="sans-serif" font-size="12" fill="#94a3b8">• 工程加速：推理优化/vLLM/算力压榨</text>
-    <text x="20" y="175" font-family="sans-serif" font-size="12" fill="#94a3b8">• AI 产品经理：场景挖掘与工作流编排</text>
-    <text x="20" y="200" font-family="sans-serif" font-size="12" fill="#94a3b8">• 业务+AI复合：传统业务AI原生重构</text>
+    <!-- Canvas Background -->
+    <rect width="1200" height="480" rx="16" fill="#FBFBFA" stroke="#E5E7EB" stroke-width="1.5"/>
     
-    <rect x="20" y="235" width="210" height="65" rx="6" fill="#0f172a" stroke="#334155" stroke-width="1"/>
-    <text x="30" y="258" font-family="sans-serif" font-size="11" fill="#38bdf8">💡 面试官核心关注</text>
-    <text x="30" y="280" font-family="sans-serif" font-size="11" fill="#cbd5e1">“你对自己投递方向的边界与业务痛点是否有真正通透的认知？”</text>
-  </g>
-
-  <!-- Step 2 -->
-  <g transform="translate(330, 100)" filter="url(#shadow)">
-    <rect width="250" height="320" rx="12" fill="url(#cardGrad)" stroke="#818cf8" stroke-width="1.5"/>
-    <rect x="0" y="0" width="250" height="6" rx="3" fill="#818cf8"/>
-    <circle cx="36" cy="36" r="16" fill="#4f46e5"/>
-    <text x="36" y="42" font-family="sans-serif" font-size="14" font-weight="bold" fill="#ffffff" text-anchor="middle">02</text>
-    <text x="64" y="34" font-family="sans-serif" font-size="16" font-weight="bold" fill="#ffffff">Prompt & Taste</text>
-    <text x="64" y="52" font-family="sans-serif" font-size="11" fill="#818cf8">PROMPT & TASTE</text>
-    <line x1="20" y1="70" x2="230" y2="70" stroke="#334155" stroke-width="1"/>
+    <!-- Header Banner -->
+    <g transform="translate(45, 40)">
+        <circle cx="10" cy="14" r="5" fill="#0061FF" />
+        <text x="24" y="19" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="20" font-weight="700" fill="#111827">AI-Era Campus Recruitment Navigator Architecture</text>
+        <text x="24" y="44" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="13" font-weight="400" fill="#6B7280">4-quadrant role taxonomy, prompt taste calibration, and end-to-end interactive demos</text>
+    </g>
     
-    <text x="20" y="95" font-family="sans-serif" font-size="13" font-weight="bold" fill="#e2e8f0">🎨 自然语言的极致结构化</text>
-    <text x="20" y="125" font-family="sans-serif" font-size="12" fill="#94a3b8">• 场景还原：把抽象需求变成精准约束</text>
-    <text x="20" y="150" font-family="sans-serif" font-size="12" fill="#94a3b8">• Badcase 敏感度：对幻觉与漂移的嗅觉</text>
-    <text x="20" y="175" font-family="sans-serif" font-size="12" fill="#94a3b8">• 评测基准建设：自建高难度 Golden Set</text>
-    <text x="20" y="200" font-family="sans-serif" font-size="12" fill="#94a3b8">• 审美与语感：山水画比喻之自然语言力</text>
+    <!-- Flow Cards -->
     
-    <rect x="20" y="235" width="210" height="65" rx="6" fill="#0f172a" stroke="#334155" stroke-width="1"/>
-    <text x="30" y="258" font-family="sans-serif" font-size="11" fill="#818cf8">💡 面试官核心关注</text>
-    <text x="30" y="280" font-family="sans-serif" font-size="11" fill="#cbd5e1">“能否用严谨自然语言调教出确定性输出？有无自建测试集？”</text>
-  </g>
-
-  <!-- Step 3 -->
-  <g transform="translate(620, 100)" filter="url(#shadow)">
-    <rect width="250" height="320" rx="12" fill="url(#cardGrad)" stroke="#34d399" stroke-width="1.5"/>
-    <rect x="0" y="0" width="250" height="6" rx="3" fill="#34d399"/>
-    <circle cx="36" cy="36" r="16" fill="#059669"/>
-    <text x="36" y="42" font-family="sans-serif" font-size="14" font-weight="bold" fill="#ffffff" text-anchor="middle">03</text>
-    <text x="64" y="34" font-family="sans-serif" font-size="16" font-weight="bold" fill="#ffffff">End-to-End Demo</text>
-    <text x="64" y="52" font-family="sans-serif" font-size="11" fill="#34d399">END-TO-END DEMO</text>
-    <line x1="20" y1="70" x2="230" y2="70" stroke="#334155" stroke-width="1"/>
-    
-    <text x="20" y="95" font-family="sans-serif" font-size="13" font-weight="bold" fill="#e2e8f0">🚀 拒绝纸上谈兵，上手出 Demo</text>
-    <text x="20" y="125" font-family="sans-serif" font-size="12" fill="#94a3b8">• 为什么用 AI：讲清非传统规则解的必要</text>
-    <text x="20" y="150" font-family="sans-serif" font-size="12" fill="#94a3b8">• 真实应用闭环：从原型到真实用户验证</text>
-    <text x="20" y="175" font-family="sans-serif" font-size="12" fill="#94a3b8">• 成本/延迟权衡：Token 预算与响应取舍</text>
-    <text x="20" y="200" font-family="sans-serif" font-size="12" fill="#94a3b8">• 迭代复盘：从 V1 到 V3 解决了哪些卡点</text>
-    
-    <rect x="20" y="235" width="210" height="65" rx="6" fill="#0f172a" stroke="#334155" stroke-width="1"/>
-    <text x="30" y="258" font-family="sans-serif" font-size="11" fill="#34d399">💡 面试官核心关注</text>
-    <text x="30" y="280" font-family="sans-serif" font-size="11" fill="#cbd5e1">“哪怕用 API 搭过小工具并解决过真实痛点，也远胜过简历吹大词。”</text>
-  </g>
-
-  <!-- Step 4 -->
-  <g transform="translate(910, 100)" filter="url(#shadow)">
-    <rect width="250" height="320" rx="12" fill="url(#cardGrad)" stroke="#f59e0b" stroke-width="1.5"/>
-    <rect x="0" y="0" width="250" height="6" rx="3" fill="#f59e0b"/>
-    <circle cx="36" cy="36" r="16" fill="#d97706"/>
-    <text x="36" y="42" font-family="sans-serif" font-size="14" font-weight="bold" fill="#ffffff" text-anchor="middle">04</text>
-    <text x="64" y="34" font-family="sans-serif" font-size="16" font-weight="bold" fill="#ffffff">Adversarial Defense</text>
-    <text x="64" y="52" font-family="sans-serif" font-size="11" fill="#f59e0b">ADVERSARIAL DEFENSE</text>
-    <line x1="20" y1="70" x2="230" y2="70" stroke="#334155" stroke-width="1"/>
-    
-    <text x="20" y="95" font-family="sans-serif" font-size="13" font-weight="bold" fill="#e2e8f0">🛡️ 极限施压与真实性审查</text>
-    <text x="20" y="125" font-family="sans-serif" font-size="12" fill="#94a3b8">• 模拟鹅厂资深面试官连环深挖追问</text>
-    <text x="20" y="150" font-family="sans-serif" font-size="12" fill="#94a3b8">• 剔除装懂硬背：还原真实技术贡献度</text>
-    <text x="20" y="175" font-family="sans-serif" font-size="12" fill="#94a3b8">• 青云计划通道：顶尖青年人才评定标准</text>
-    <text x="20" y="200" font-family="sans-serif" font-size="12" fill="#94a3b8">• 100 分制校招竞争力实测达标通过</text>
-    
-    <rect x="20" y="235" width="210" height="65" rx="6" fill="#0f172a" stroke="#334155" stroke-width="1"/>
-    <text x="30" y="258" font-family="sans-serif" font-size="11" fill="#f59e0b">💡 面试官核心关注</text>
-    <text x="30" y="280" font-family="sans-serif" font-size="11" fill="#cbd5e1">“对自己的每一个决策知其所以然，绝无学术造假与代码套壳。”</text>
-  </g>
+        <!-- Step 1 Card -->
+        <g transform="translate(45, 130)">
+            <!-- Drop Shadow -->
+            <rect x="0" y="4" width="250" height="290" rx="12" fill="rgba(0,0,0,0.03)" />
+            <!-- Card Body -->
+            <rect x="0" y="0" width="250" height="290" rx="12" fill="#FFFFFF" stroke="#E5E7EB" stroke-width="1.5" />
+            <!-- Top Color Accent Bar -->
+            <path d="M0 12 Q0 0 12 0 L238 0 Q250 0 250 12 L250 6 L0 6 Z" fill="#4F46E5" />
+            
+            <!-- Step Header Pill -->
+            <rect x="18" y="24" width="70" height="22" rx="6" fill="#4F46E515" />
+            <text x="26" y="39" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="11" font-weight="700" fill="#4F46E5">STEP 01</text>
+            
+            <!-- Titles -->
+            <text x="18" y="74" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="17" font-weight="700" fill="#111827">01. 4-Quadrant Taxonomy</text>
+            <text x="18" y="96" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="12" font-weight="600" fill="#6B7280">Career Navigation</text>
+            
+            <!-- Divider -->
+            <line x1="18" y1="112" x2="232" y2="112" stroke="#F3F4F6" stroke-width="1.5" />
+            
+            <!-- Description -->
+            <foreignObject x="18" y="124" width="214" height="140">
+                <div xmlns="http://www.w3.org/1999/xhtml" style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif; font-size: 13px; line-height: 1.6; color: #4B5563;">
+                    Classify infra, fine-tuning, agent systems, and app layers to avoid commoditization
+                </div>
+            </foreignObject>
+        </g>
+        
+            <g transform="translate(305, 263)">
+                <circle cx="8" cy="12" r="14" fill="#F3F4F6"/>
+                <path d="M5 8 L11 12 L5 16" fill="none" stroke="#6B7280" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </g>
+            
+        
+        <!-- Step 2 Card -->
+        <g transform="translate(331, 130)">
+            <!-- Drop Shadow -->
+            <rect x="0" y="4" width="250" height="290" rx="12" fill="rgba(0,0,0,0.03)" />
+            <!-- Card Body -->
+            <rect x="0" y="0" width="250" height="290" rx="12" fill="#FFFFFF" stroke="#E5E7EB" stroke-width="1.5" />
+            <!-- Top Color Accent Bar -->
+            <path d="M0 12 Q0 0 12 0 L238 0 Q250 0 250 12 L250 6 L0 6 Z" fill="#0061FF" />
+            
+            <!-- Step Header Pill -->
+            <rect x="18" y="24" width="70" height="22" rx="6" fill="#0061FF15" />
+            <text x="26" y="39" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="11" font-weight="700" fill="#0061FF">STEP 02</text>
+            
+            <!-- Titles -->
+            <text x="18" y="74" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="17" font-weight="700" fill="#111827">02. Prompt Taste Builder</text>
+            <text x="18" y="96" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="12" font-weight="600" fill="#6B7280">Taste Calibration</text>
+            
+            <!-- Divider -->
+            <line x1="18" y1="112" x2="232" y2="112" stroke="#F3F4F6" stroke-width="1.5" />
+            
+            <!-- Description -->
+            <foreignObject x="18" y="124" width="214" height="140">
+                <div xmlns="http://www.w3.org/1999/xhtml" style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif; font-size: 13px; line-height: 1.6; color: #4B5563;">
+                    Upgrade student prompts into production contracts with edge defense & negative constraints
+                </div>
+            </foreignObject>
+        </g>
+        
+            <g transform="translate(591, 263)">
+                <circle cx="8" cy="12" r="14" fill="#F3F4F6"/>
+                <path d="M5 8 L11 12 L5 16" fill="none" stroke="#6B7280" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </g>
+            
+        
+        <!-- Step 3 Card -->
+        <g transform="translate(617, 130)">
+            <!-- Drop Shadow -->
+            <rect x="0" y="4" width="250" height="290" rx="12" fill="rgba(0,0,0,0.03)" />
+            <!-- Card Body -->
+            <rect x="0" y="0" width="250" height="290" rx="12" fill="#FFFFFF" stroke="#E5E7EB" stroke-width="1.5" />
+            <!-- Top Color Accent Bar -->
+            <path d="M0 12 Q0 0 12 0 L238 0 Q250 0 250 12 L250 6 L0 6 Z" fill="#059669" />
+            
+            <!-- Step Header Pill -->
+            <rect x="18" y="24" width="70" height="22" rx="6" fill="#05966915" />
+            <text x="26" y="39" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="11" font-weight="700" fill="#059669">STEP 03</text>
+            
+            <!-- Titles -->
+            <text x="18" y="74" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="17" font-weight="700" fill="#111827">03. 48h Demo Execution</text>
+            <text x="18" y="96" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="12" font-weight="600" fill="#6B7280">Interactive Prototyping</text>
+            
+            <!-- Divider -->
+            <line x1="18" y1="112" x2="232" y2="112" stroke="#F3F4F6" stroke-width="1.5" />
+            
+            <!-- Description -->
+            <foreignObject x="18" y="124" width="214" height="140">
+                <div xmlns="http://www.w3.org/1999/xhtml" style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif; font-size: 13px; line-height: 1.6; color: #4B5563;">
+                    Rapidly ship Streamlit/Gradio live demo links testable by interviewers on mobile
+                </div>
+            </foreignObject>
+        </g>
+        
+            <g transform="translate(877, 263)">
+                <circle cx="8" cy="12" r="14" fill="#F3F4F6"/>
+                <path d="M5 8 L11 12 L5 16" fill="none" stroke="#6B7280" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </g>
+            
+        
+        <!-- Step 4 Card -->
+        <g transform="translate(903, 130)">
+            <!-- Drop Shadow -->
+            <rect x="0" y="4" width="250" height="290" rx="12" fill="rgba(0,0,0,0.03)" />
+            <!-- Card Body -->
+            <rect x="0" y="0" width="250" height="290" rx="12" fill="#FFFFFF" stroke="#E5E7EB" stroke-width="1.5" />
+            <!-- Top Color Accent Bar -->
+            <path d="M0 12 Q0 0 12 0 L238 0 Q250 0 250 12 L250 6 L0 6 Z" fill="#D97706" />
+            
+            <!-- Step Header Pill -->
+            <rect x="18" y="24" width="70" height="22" rx="6" fill="#D9770615" />
+            <text x="26" y="39" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="11" font-weight="700" fill="#D97706">STEP 04</text>
+            
+            <!-- Titles -->
+            <text x="18" y="74" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="17" font-weight="700" fill="#111827">04. Technical Depth Probe</text>
+            <text x="18" y="96" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="12" font-weight="600" fill="#6B7280">Adversarial Defense</text>
+            
+            <!-- Divider -->
+            <line x1="18" y1="112" x2="232" y2="112" stroke="#F3F4F6" stroke-width="1.5" />
+            
+            <!-- Description -->
+            <foreignObject x="18" y="124" width="214" height="140">
+                <div xmlns="http://www.w3.org/1999/xhtml" style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif; font-size: 13px; line-height: 1.6; color: #4B5563;">
+                    Defend causal inference, VRAM calculation, latency tradeoffs, and failure recovery
+                </div>
+            </foreignObject>
+        </g>
+        
+        
 </svg>

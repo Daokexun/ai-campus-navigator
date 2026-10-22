@@ -1,162 +1,110 @@
-<p align="center">
-  <img src="assets/hero_poster_zh.jpg" alt="鹅厂校招特辑 · AI 时代求职导航 GTM" width="100%" style="border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.18);" />
-</p>
+<div align="right">
+  <b>简体中文</b> | <a href="README.md">English</a>
+</div>
 
 <div align="center">
 
-[English](README.md) • **简体中文**
+<img src="assets/hero_poster_zh.jpg" alt="AI 时代校招生求职与实战能力重构指南" width="100%" style="border-radius: 12px; box-shadow: 0 8px 24px rgba(0,0,0,0.06);" />
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg?style=flat-square)](LICENSE)
-[![Skill: Antigravity](https://img.shields.io/badge/技能-Antigravity-6366f1.svg?style=flat-square)](SKILL.md)
-[![适合人群](https://img.shields.io/badge/适配人群-2026/2027届校招生_%7C_大厂实习-10b981.svg?style=flat-square)](#-高转化校招求职的三大-gtm-战略基石)
-[![审核机制](https://img.shields.io/badge/面试官质检-红蓝对抗通过-06b6d4.svg?style=flat-square)](evals/rubric_100_ai_campus.json)
-[![PRs Welcome](https://img.shields.io/badge/PRs-欢迎共建-violet.svg?style=flat-square)](CONTRIBUTING.md)
+# AI 时代校招生求职与实战能力重构指南
+### AI-Era Campus Recruitment Navigator & Engineering Engine
 
-<p align="center">
-  <b>在 AI 浪潮重塑技术生态的当下，校招求职的底层评判逻辑已经发生剧变。</b><br>
-  别再把简单刷题和套壳代码当做护城河。基于腾讯校园招聘团队一手实战洞察，用“岗位四维象限、Prompt 语感品味、真实 Demo 闭环与青云对抗防守”，重塑这一届校招生的真正大厂竞争力。
-</p>
-
-[GTM 理念](#-什么是-ai-校招的-go-to-market-gtm-策略) • [三大战略基石](#-高转化校招求职的三大-gtm-战略基石) • [四步落地路线](#-四步重构大厂校招竞争力gtm-实施路线) • [实战真实对比](#-实战真实对比自嗨刷题简历-vs-本工具重塑的高转化方案) • [极速上手](#-30秒极速上手) • [系列项目规范](docs/ARCHITECTURE.md)
-
----
+**沉淀自腾讯技术与业务导师团队实战洞察 · 击破盲目调包内卷、重塑岗位认知与 48h Demo 闭环**
 
 </div>
 
-## 🎯 什么是 AI 校招的 Go-to-Market (GTM) 策略？
+---
 
-> **“Think of a go-to-market strategy as the north star that guides your product launch.”**  
-> —— 亚马逊官方 GTM 指南
+### 📖 导读与实战背景
 
-在校招中，很多应届生把绝大多数精力花在刷 500 道 LeetCode、在简历里堆满“熟练掌握 Transformer/RAG/LangChain”这样空洞的自嗨词汇上。简历投出去几百份，结果面试一问三不知，二面就被面试官连环深挖打回原形。
+> **“在 AI 人人可用的时代，校招生最大的壁垒绝不是‘跑通了开源开源代码’，而是能否理解代码背后的商业因果律、具备工程化落地能力与高质量的 Prompt 审美。”**  
+> —— 腾讯技术与业务导师团队（鹅厂卧谈会）
 
-**问题不在你的学历，而在你的定位与交付——你的求职 Portfolio 没有建立大厂面试官的真实信任。**
+当前 AI 浪潮下，技术校招与产品校招面临前所未有的同质化困境：
 
-大厂校招不是做期末考卷，它是你在人才市场上将自己作为一款“高潜力产品”推向顶尖雇主的 **Go-to-Market 过程**：
-1. **看清真实岗位版图（Understand Your Audience）**：大厂现在招的到底是什么人？算法研究、工程加速还是 AI 产品？
-2. **构建独家品味壁垒（Understand the Competition）**：当人人都能用 AI 写代码时，你对自然语言场景拆解与 Badcase 调优的“品味”在哪里？
-3. **完成真实落地闭环（Connect with Your Target Audience）**：哪怕用开源模型 API 做过一个真正有人用的 Demo，也远胜过 10 个跑不通的学术套壳。
+1. **“盲目调包，毫无壁垒”**：简历上清一色写着“调用 OpenAI / LangChain API 开发知识库”，面试官一问底层 Token 消耗、显存占用与并发延迟，瞬间哑口无言；
+2. **“岗位认知极其模糊”**：分不清底层基建（Infra）、模型微调（Fine-Tuning）、智能体系统（Agentic Workflows）与赋能应用的区别，盲目海投导致精准度极低；
+3. **“Demo 仅存在于 PPT 中”**：面试时只有截图或本地运行日志，无法提供任何可供面试官当场扫码实测的在线可交互原型。
 
-**`ai-campus-navigator`** 将腾讯招聘团队（《鹅厂卧谈会》EP11）的实战理念，沉淀为一套可量化、可实操的自动化 Agent 技能。
+本指南源于腾讯资深技术与产品面试官团队的一线指导，系统拆解**四象限岗位认知、Prompt 审美跃迁、48小时可交互 Demo 极速交付与底层技术深度防守**，助力校招生构筑不可替代的实战壁垒。
 
 ---
 
-## 🏛️ 高转化校招求职的三大 GTM 战略基石
+### 🏛️ 四大核心支柱 (Core Capabilities)
 
-参考大厂校招用人标准，我们将校招突围拆解为三大底层支柱：
+参考 Dropbox 资源中心与顶级科技公司工程实践，本系统构建了 4 大标准化工作模块：
 
-| 战略基石 | 核心操盘抓手 | 落地价值与产出 |
+| 模块 | 核心解决问题 | 一线实战落地打法 |
 | :--- | :--- | :--- |
-| **1. 诊断生态位<br/>(Understand Audience)** | 划分算法研究、推理加速、AI 产品经理与跨界复合四大象限，拒绝无脑盲投。 | 杜绝“专业不对口还硬投”的无效海投，找到竞争壁垒最厚、通过率最高的生态位。 |
-| **2. 淬炼品味与语感<br/>(Prompt & Taste)** | 践行“山水画自然语言还原法则”，建立结构化 Prompt 约束与自建 Golden Set 评测集。 | 彻底摆脱只会“调温吹水”的初级水平，展现严谨的 Badcase 诊断与确定性控制能力。 |
-| **3. 交付真实 Demo 闭环<br/>(End-to-End Demo)** | 强化 Why AI 论证、Token 经济与延迟控制，记录真实失败与迭代纪实。 | 用具有真实生命力、能解决实际问题的工作流，降维打击简历全是玩具课设的竞争对手。 |
+| **01 岗位四象限定位**<br>`prompts/01_ai_career_compass.md` | 跳出盲目调包陷阱，明确个人技术栈生态位 | 划分底层算力与分布式训练、垂直领域模型微调、业务级 Agent 编排、现有业务+AI 赋能 4 类生态位，精准对齐求职诉求。 |
+| **02 Prompt 审美跃迁引擎**<br>`prompts/02_prompt_taste_builder.md` | 摆脱学生式模糊提问，撰写生产级指令 | 从“生成一段文案”跃迁至包含“结构化角色定义 + 上下文注入 + 负向硬性约束 + 容错防御 + JSON Schema 严格校验”。 |
+| **03 48h 极速 Demo 交付闭环**<br>`prompts/03_interactive_demo_loop.md` | 告别纸上谈兵，现场提供手机可测原型 | 使用 Streamlit / Gradio 配合轻量云托管，48 小时内落地具备可测试性、异常处理与数据持久化的端到端应用。 |
+| **04 架构深度探针与抗穿防守**<br>`prompts/04_technical_depth_probe.md` | 应对技术大牛 10 轮因果逻辑压力测试 | 针对显存开销换算、推理吞吐与延迟平衡、幻觉抑制、降级容灾方案提供严密推演逻辑。 |
 
 ---
 
-## 🔄 四步重构大厂校招竞争力：GTM 实施路线
+### 📐 业务全景系统架构
 
-<p align="center">
-  <img src="assets/architecture_zh.svg" alt="鹅厂校招 AI 人才突围四步法架构" width="100%" style="border-radius: 12px;" />
-</p>
+下图展示了从四象限岗位定位、Prompt 工业化到 48h 原型交付与答辩防守的全景闭环：
 
-按照四步递进路线，本工具将校招求职升级为 4 个清晰交付阶段：
-
-### 📍 Step 1. 定位四维象限 (Role Taxonomy)
-- **算法研究轨 (Research / 青云计划)**：考核顶级学术论文原创性与前沿 Scaling Law 思考。
-- **工程加速轨 (Engineering / System)**：考核推理框架（vLLM/TensorRT-LLM）显存压榨与 Serving 吞吐优化。
-- **AI 产品经理轨 (AI Product Manager)**：考核痛点敏锐度、工作流解构力、Prompt 品味与体验闭环。
-- **业务复合轨 (Domain + AI Native)**：经管/人文跨界人才，用 AI 原生工具重构传统业务效率。
-
-### 📍 Step 2. 淬炼品味与语感 (Prompt & Taste)
-- **自然语言的极致结构化**：拒绝模糊指令，把任务拆解为输入协议、业务负向约束与结构化输出规范。
-- **自建评测基准 (Golden Set)**：自建 50+ 条包含对抗性提示词与幻觉高发样本的真实评测集，用数据证明调优效果。
-
-### 📍 Step 3. 打造落地真实闭环 (End-to-End Demo)
-- **非 AI 不可的论证 (Why AI)**：清晰阐述传统规则算法为何无法解决此痛点，证明生成式模型的独特价值。
-- **工程成本与延迟权衡**：给出 Token 开销预估、缓存机制（Prompt Caching）与 P95 响应延迟控制方案。
-- **Badcase 迭代实录**：展示 3 个曾经彻底翻车的案例及通过什么机制彻底解决，展现真实技术沉淀。
-
-### 📍 Step 4. 红蓝对抗与青云答辩 (Adversarial Defense)
-- **毒舌面试官抗压审查**：由资深大厂面试官 Agent 进行逐行挑刺，深挖项目真实贡献度。
-- **100 分制竞争力质检**：排查学术造假、代码抄袭与空洞自夸，综合得分低于 85 分自动触发底层重构。
+<div align="center">
+  <img src="assets/architecture_zh.svg" alt="校招实战系统架构图" width="100%" />
+</div>
 
 ---
 
-## 🥊 实战真实对比：自嗨刷题简历 vs 本工具重塑的高转化方案
+### 🥊 实战攻防对比：学生调包侠 vs 业务工程型候选人
 
-以一名投递【腾讯 AI 产品经理/技术研究员】的 2026 届应届生为例：
-
-| 模块维度 | ❌ 普通校招生的自嗨式写法 (直接问通用 AI) | 💎 本工具重构后的真实高转化方案 (腾讯面试官认可) |
+| 面试考察点 | 普通调包应届生的表现 | 业务工程型候选人的高分答卷 |
 | :--- | :--- | :--- |
-| **自我定位** | “热爱人工智能，熟悉主流大模型，精通 Prompt 提示词工程，具备良好的沟通能力与抗压能力。”<br>*(❌ 全是虚词套话，面试官 3 秒划走)* | **【AI 原生场景重构者 · 兼具工程评测与品味】**<br>主攻垂类搜索与办公协同智能体，拥有 500+ 高难度边界 Badcase 评测集构建经验，主导搭建可复用工作流，降低幻觉率 34%。 |
-| **项目描述<br/>(RAG知识库)** | “开发了一款基于 LangChain 的企业级文档问答系统，调用 GPT-4 接口，实现了高效精准检索，获得导师好评。”<br>*(❌ 标准代码套壳，毫无技术含量与思考深度)* | **“🧼 【多级父子切分 + 混合重排企业知识库】”**<br>解决长表格与代码段召回混乱痛点。对比语义分块与递归字符分块，引入 BGE-Reranker 提升首屏准召率至 92%；自建保底 Fallback 路由，Token 开销削减 42%。 |
-| **面试现场防守<br/>(连环深挖)** | 面试官：“如果大模型在用户追问时产生幻觉，你怎么排查？”<br>候选人：“我会让用户重新输入，或者调低 temperature。”<br>*(❌ 暴露没有工业级工程直觉)* | **“精准定位五大幻觉源”**：系统区分 Prompt 权重衰减、Context 窗口超限与检索碎片噪声；引入 Few-shot 负向约束与结构化 JSON Schema 校验，前置阻断 90% 格式漂移。 |
-| **青云专项突破** | 盲目投递青云计划，把本科课程大作业当科研成果，一轮游被刷。 | **差异化长板战术**：深挖单点极限（如端侧小模型量化与 200ms 极速响应），提供完整交互 Demo 视频与 Badcase 复盘白皮书，实现逆风突围。 |
-
-> 📖 查看完整对决案例文档：[examples/SHOWCASE_COMPARISON.md](examples/SHOWCASE_COMPARISON.md)
+| **面试官问：“你的大模型问答系统如何处理幻觉？”** | 泛泛而谈：“我们在 Prompt 里写了‘请根据事实回答，不要编造’，然后调了 LangChain 的默认 RAG 检索。” | **严密防御与兜底协议**：“单一 Prompt 约束无法彻底根除幻觉。我们在工程上采取三层防御：1. **召回阶段**采用语义检索+关键词倒排混合检索，设定相似度置信阈值；2. **推理阶段**强制要求模型输出引用的段落 ID，未引用的内容直接过滤；3. **兜底阶段**配置后验规则校验器，若关键实体不匹配则触发优雅降级，转人工兜底。” |
+| **现场展示项目 Demo** | 打开 GitHub 仓库展示几百行代码，或者展示几张截好的运行截图。 | **即开即测的交互闭环**：“张老师，项目已经部署在云端轻量容器中，这是在线可交互 Demo 的二维码。您可以直接在手机浏览器输入一段真实的客服咨询，测试并发延迟与结构化 JSON 输出的校验稳定性。” |
+| **面试官追问：“如果业务并发量翻 10 倍，你的系统瓶颈在哪里？”** | 茫然猜测：“可能是服务器 CPU 不够，加配置或者多开几台机器吧。” | **瓶颈量化与架构取舍**：“瓶颈不在前端服务，而在下游 LLM 推理吞吐与上游向量数据库的 QPS 限制。若流量激增 10 倍，首先打满的是每分钟 Token 速率配额（TPM）。我们设计了两级应对：针对高频重复问答引入 Redis 语义向量缓存（命中率达 42%），同时针对耗时长的复杂任务采用 Celery 异步队列解耦，保障核心链路不被雪崩拖垮。” |
 
 ---
 
-## 🧠 大厂面试官的三大核心心法
-
-### 1. 真实与自驱远胜于背诵标准答案
-面试官最反感“八股文背得滚瓜烂熟，稍微追问一步底层就露怯”。展示你在课外因纯粹的好奇心折腾过的项目，哪怕失败过，也是最闪光的特质。
-
-### 2. 动过手的 Demo 是最好的敲门砖
-在 GitHub 上部署一个可以交互的在线 Demo，附带真实用户的体验反馈，比在纸面上写十行“精通”要有说服力一百倍。
-
-### 3. 把品味落在日常表达与结构化思考中
-能否用清晰严谨的语言把复杂的系统讲明白？能否快速抓出不合理的 Badcase？这是 AI 时代大厂最看重的核心认知素质。
-
----
-
-## 📂 项目结构
+### 📂 仓库核心资产目录
 
 ```text
 ai-campus-navigator/
-├── SKILL.md                          # Antigravity Agent 技能主控规范
-├── README.md                         # 英文官方文档 (English)
-├── README_zh.md                      # 中文官方文档 (简体中文)
-├── LICENSE                           # MIT 开源协议
-├── CONTRIBUTING.md                   # 贡献指南
-├── assets/                           # 商业海报与纯矢量架构图
-│   ├── hero_poster_zh.jpg            # 中文版高质感商业海报
-│   ├── hero_poster_en.jpg            # 英文版高质感商业海报
-│   ├── architecture_zh.svg           # 中文四步法架构流程图
-│   └── architecture.svg              # 英文四步法架构流程图
-├── prompts/                          # 5 大模块化提示词资产工厂
-│   ├── 01_ai_role_radar.md           # 岗位四维雷达与生态位诊断
-│   ├── 02_prompt_taste_evaluator.md  # Prompt 品味与语感评测引擎
-│   ├── 03_demo_showcase_loop.md      # 真实 Demo 闭环与项目提纯工坊
-│   ├── 04_qingyun_talent_matrix.md   # 青云计划与顶级技术人才突围矩阵
-│   └── 05_adversarial_interviewer_audit.md # 毒舌面试官红蓝对抗质检沙盘
-├── templates/                        # 结构化评估与模版
-│   └── ai_portfolio_schema.json      # 结构化输出 JSON Schema
-├── evals/                            # 质量评估套件
-│   └── rubric_100_ai_campus.json     # 100 分制校招竞争力评估模型
-├── docs/                             # 技术架构与底层机制
-│   └── ARCHITECTURE.md               # 核心架构文档
-└── examples/                         # 实战对比与案例
-    └── SHOWCASE_COMPARISON.md        # 普通 AI vs 本工具同台残酷对决
+├── assets/
+│   ├── hero_poster_zh.jpg           # Dropbox 风格中文商业封面
+│   ├── hero_poster_en.jpg           # 英文版商业封面
+│   ├── architecture_zh.svg          # 中文矢量系统架构图
+│   └── architecture.svg             # 英文矢量系统架构图
+├── prompts/
+│   ├── 01_ai_career_compass.md          # 岗位四象限矩阵定位与技能树诊断
+│   ├── 02_prompt_taste_builder.md       # 工业级 Prompt 审美跃迁工作台
+│   ├── 03_interactive_demo_loop.md      # 48 小时端到端 Demo 极速交付指南
+│   ├── 04_technical_depth_probe.md      # 10 道底层架构与因果逻辑高压探针
+│   └── 05_github_showcase_architect.md  # 顶级开源代码库 README 视觉工程指南
+├── templates/
+│   └── candidate_profile_schema.json    # 候选人技能与项目评估结构化 Schema
+├── evals/
+│   └── rubric_100_ai_campus.json        # AI 时代校招实战竞争力 100 分量化评分标准
+├── docs/
+│   └── ARCHITECTURE.md                  # 校招生求职与实战能力重构完整白皮书
+├── examples/
+│   └── SHOWCASE_COMPARISON.md           # 真实调包简历 vs 工程化实战案例拆解
+├── SKILL.md                             # Antigravity / Claude 智能体技能定义
+├── README_zh.md                         # 中文实战文档（当前文件）
+└── README.md                            # 英文版发布文档
 ```
 
 ---
 
-## 🚀 30秒极速上手
+### 🚀 快速上手 (Quickstart)
 
-### 在 Google Antigravity / Claude Agent 中直接调用
-把本技能放入 `.agents/skills/ai-campus-navigator`，在对话中直接唤醒：
+```bash
+# 1. 克隆本仓库
+git clone https://github.com/Daokexun/ai-campus-navigator.git
 
-```text
-/skill ai-campus-navigator
-目标方向: 腾讯 AI 产品经理 (或 青云技术专项)
-当前背景: 计算机与经管双学位，有一段 RAG 智能体课设与在线 Demo
-核心困惑: 感觉大家都在做类似项目，不知道如何在面试官面前突出差异化
+# 2. 查阅工业级 Prompt 审美构建指南
+cat prompts/02_prompt_taste_builder.md
 ```
 
 ---
 
-## 🤝 贡献与开源协议
+### 📄 开源许可与贡献
 
-欢迎提交 PR 与 Issue，共同扩充大厂 AI 岗位评测集与真实面经！  
-本项目基于 [MIT License](LICENSE) 开源发布。
+本项目基于 [MIT License](LICENSE) 开源。欢迎一线大模型工程师、业务架构师与技术导师贡献真实评测题目与实战项目范例。贡献规则详见 [CONTRIBUTING.md](CONTRIBUTING.md)。
