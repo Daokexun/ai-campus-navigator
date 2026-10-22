@@ -48,7 +48,7 @@ Modeled after modern SaaS engineering publication standards:
 The following diagram illustrates the candidate journey from role classification to interactive demo deployment and panel defense:
 
 <div align="center">
-  <img src="assets/architecture.svg" alt="System Architecture Diagram" width="100%" />
+  <img src="assets/architecture.png" alt="System Architecture Diagram" width="100%" />
 </div>
 
 ---

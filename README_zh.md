@@ -48,7 +48,7 @@
 下图展示了从四象限岗位定位、Prompt 工业化到 48h 原型交付与答辩防守的全景闭环：
 
 <div align="center">
-  <img src="assets/architecture_zh.svg" alt="校招实战系统架构图" width="100%" />
+  <img src="assets/architecture_zh.png" alt="校招实战系统架构图" width="100%" />
 </div>
 
 ---
