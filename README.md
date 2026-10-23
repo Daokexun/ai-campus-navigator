@@ -4,7 +4,15 @@
 
 <div align="center">
 
-<img src="assets/hero_poster_en.jpg" alt="AI-Era Campus Recruitment Navigator & Engineering Engine" width="100%" style="border-radius: 12px; box-shadow: 0 8px 24px rgba(0,0,0,0.06);" />
+<a href="assets/hero_motion_demo.mp4">
+  <img src="assets/hero_motion_preview.gif" alt="AI-Era Campus Recruitment Navigator Dynamic Demo" width="100%" style="border-radius: 12px; box-shadow: 0 8px 24px rgba(0,0,0,0.12);" />
+</a>
+
+<p align="center">
+  <em>⚡ Live Telemetry: Monospaced code streaming, RAG Triad verification, and real-time Prompt Taste Radar mapping</em>
+  <br>
+  <a href="assets/hero_motion_demo.mp4">▶ <b>Watch Full 10s HD 60fps Video (assets/hero_motion_demo.mp4)</b></a> · <a href="assets/hero_poster_en.jpg">🖼 Static Publication Poster</a>
+</p>
 
 # AI-Era Campus Recruitment Navigator & Engineering Engine
 ### Engineering insights distilled from Tencent technical leads and hiring mentors
@@ -13,6 +21,7 @@
 
 <p align="center">
   <a href="https://github.com/Daokexun/ai-campus-navigator/stargazers"><img src="https://img.shields.io/github/stars/Daokexun/ai-campus-navigator?style=flat-square&logo=github&color=black" alt="GitHub Stars"></a>
+  <a href="assets/hero_motion_demo.mp4"><img src="https://img.shields.io/badge/Demo-HD%20Video-E11D48?style=flat-square&logo=youtube" alt="HD Video Demo"></a>
   <a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-blue.svg?style=flat-square" alt="License"></a>
   <a href="llms.txt"><img src="https://img.shields.io/badge/Claude%20Code-Skill%20Ready-6B46C1?style=flat-square&logo=anthropic" alt="Claude Code Ready"></a>
   <a href="cli/taste_evaluator.py"><img src="https://img.shields.io/badge/CLI-Taste%20Evaluator-10B981?style=flat-square&logo=python" alt="CLI Evaluator"></a>
@@ -112,6 +121,8 @@ This repository is optimized for autonomous coding agents (Claude Code, Cursor, 
 ```text
 ai-campus-navigator/
 ├── assets/
+│   ├── hero_motion_demo.mp4         # 10s 60fps HD motion demonstration video
+│   ├── hero_motion_preview.gif      # Lightweight looping animated preview
 │   ├── hero_poster_en.jpg           # English publication banner (1280x720)
 │   ├── hero_poster_zh.jpg           # Chinese publication banner (1280x720)
 │   ├── architecture.png             # 1280x640 High-Density Engineering Architecture

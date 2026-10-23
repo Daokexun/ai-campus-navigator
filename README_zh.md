@@ -4,7 +4,15 @@
 
 <div align="center">
 
-<img src="assets/hero_poster_zh.jpg" alt="AI 时代校招生求职与实战能力重构指南" width="100%" style="border-radius: 12px; box-shadow: 0 8px 24px rgba(0,0,0,0.06);" />
+<a href="assets/hero_motion_demo.mp4">
+  <img src="assets/hero_motion_preview.gif" alt="AI 时代校招生求职与实战能力重构指南 动态演示" width="100%" style="border-radius: 12px; box-shadow: 0 8px 24px rgba(0,0,0,0.12);" />
+</a>
+
+<p align="center">
+  <em>⚡ 实战动态推演：代码流式生成、RAG 三元组审计、Prompt 审美五维雷达动态映射</em>
+  <br>
+  <a href="assets/hero_motion_demo.mp4">▶ <b>观看完整 10 秒 60fps 高清动态视频 (assets/hero_motion_demo.mp4)</b></a> · <a href="assets/hero_poster_zh.jpg">🖼 静态技术社论海报</a>
+</p>
 
 # AI 时代校招生求职与实战能力重构指南
 ### AI-Era Campus Recruitment Navigator & Engineering Engine
@@ -13,6 +21,7 @@
 
 <p align="center">
   <a href="https://github.com/Daokexun/ai-campus-navigator/stargazers"><img src="https://img.shields.io/github/stars/Daokexun/ai-campus-navigator?style=flat-square&logo=github&color=black" alt="GitHub Stars"></a>
+  <a href="assets/hero_motion_demo.mp4"><img src="https://img.shields.io/badge/Demo-HD%20Video-E11D48?style=flat-square&logo=youtube" alt="HD Video Demo"></a>
   <a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-blue.svg?style=flat-square" alt="License"></a>
   <a href="llms.txt"><img src="https://img.shields.io/badge/Claude%20Code-Skill%20Ready-6B46C1?style=flat-square&logo=anthropic" alt="Claude Code Ready"></a>
   <a href="cli/taste_evaluator.py"><img src="https://img.shields.io/badge/CLI-Taste%20Evaluator-10B981?style=flat-square&logo=python" alt="CLI Evaluator"></a>
@@ -112,6 +121,8 @@ python cli/taste_evaluator.py --eval "你编写的提示词内容"
 ```text
 ai-campus-navigator/
 ├── assets/
+│   ├── hero_motion_demo.mp4         # 10 秒 60fps 高清实战推演动态演示视频
+│   ├── hero_motion_preview.gif      # 轻量级循环动效预览图 (兼容所有 Markdown 渲染)
 │   ├── hero_poster_en.jpg           # 英文技术社论封面海报 (1280x720)
 │   ├── hero_poster_zh.jpg           # 中文技术社论封面海报 (1280x720)
 │   ├── architecture.png             # 1280x640 全景系统架构蓝图
